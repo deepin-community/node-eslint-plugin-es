@@ -1,0 +1,42 @@
+node-eslint-plugin-es (4.1.0~ds1-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 15 Sep 2021 16:25:18 +0100
+
+node-eslint-plugin-es (4.1.0~ds1-2) unstable; urgency=medium
+
+  * fix have autopkgtest depend on nodejs
+  * add patch 1002
+    to comply with @mysticatea/eslint-plugin/meta-property-ordering
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 27 Dec 2020 05:10:13 +0100
+
+node-eslint-plugin-es (4.1.0~ds1-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release(s)
+
+  [ Jonas Smedegaard ]
+  * copyright:
+    + avoid more pre-generated code when repackaging upstream source
+  * drop patch cherry-picked upstream since applied
+  * add patch 1001 to tidy code making it eslint clean
+  * update patch 2001
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 15 Dec 2020 01:05:21 +0100
+
+node-eslint-plugin-es (1.4.1~ds1-2) unstable; urgency=medium
+
+  * support DEB_BUILD_OPTIONS=terse
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 14 Dec 2020 12:00:36 +0100
+
+node-eslint-plugin-es (1.4.1~ds1-1) experimental; urgency=low
+
+  * initial release;
+    closes: Bug#976841
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 08 Dec 2020 15:40:23 +0100

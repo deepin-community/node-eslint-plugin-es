@@ -1,0 +1,18 @@
+extends:
+  - plugin:@mysticatea/es2015
+  - plugin:@mysticatea/+eslint-plugin
+
+overrides:
+  - files: lib/rules/*.js
+    rules:
+      "@mysticatea/eslint-plugin/require-meta-docs-url":
+        - error
+        - pattern: http://mysticatea.github.io/eslint-plugin-es/rules/{{name}}.html
+
+  - files: scripts/*.js
+    rules:
+      require-jsdoc: off
+
+  - files: "*.vue"
+    parserOptions:
+      parser: babel-eslint

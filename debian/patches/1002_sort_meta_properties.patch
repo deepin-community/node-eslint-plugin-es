@@ -1,0 +1,17 @@
+Description: comply with @mysticatea/eslint-plugin/meta-property-ordering
+Author: Jonas Smedegaard <dr@jones.dk>
+Last-Update: 2020-12-27
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/tests/lib/rules/no-global-this.js
++++ b/tests/lib/rules/no-global-this.js
+@@ -22,8 +22,8 @@
+         },
+         {
+             code: "window.globalThis",
+-            errors: ["ES2020 'globalThis' variable is forbidden."],
+             globals: { window: "readonly" },
++            errors: ["ES2020 'globalThis' variable is forbidden."],
+         },
+     ],
+ })

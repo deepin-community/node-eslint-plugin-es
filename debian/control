@@ -1,0 +1,41 @@
+Source: node-eslint-plugin-es
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders:
+ Jonas Smedegaard <dr@jones.dk>,
+Build-Depends:
+ debhelper-compat (= 13),
+ eslint <!nocheck>,
+ mocha <!nocheck>,
+ node-mysticatea-eslint-plugin <!nocheck>,
+ node-eslint-utils <!nocheck>,
+ node-regexpp <!nocheck>,
+ nodejs,
+ pandoc <!nodoc>,
+Standards-Version: 4.5.1
+Homepage: https://github.com/mysticatea/eslint-plugin-es
+Vcs-Browser: https://salsa.debian.org/js-team/node-eslint-plugin-es
+Vcs-Git: https://salsa.debian.org/js-team/node-eslint-plugin-es.git
+Rules-Requires-Root: no
+
+Package: node-eslint-plugin-es
+Architecture: all
+Depends:
+ node-eslint-utils,
+ node-regexpp,
+ ${misc:Depends},
+Enhances:
+ eslint,
+Description: ESLint plugin which disallows each ECMAScript syntax
+ Espree, the default parser of ESLint, has option "ecmaVersion".
+ However, it doesn't support enabling each syntactic feature individually.
+ .
+ This plugin lets us disable each syntactic feature individually.
+ So we can enable arbitrary syntactic features
+ with the combination of ecmaVersion and this plugin.
+ .
+ ESLint is a tool for identifying and reporting on patterns
+ found in ECMAScript/JavaScript code.
+ .
+ Node.js is an event-based server-side JavaScript engine.
